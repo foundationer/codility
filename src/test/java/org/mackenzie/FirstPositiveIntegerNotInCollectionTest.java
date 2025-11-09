@@ -1,21 +1,21 @@
 package org.mackenzie;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FirstPositiveIntegerNotInCollectionTest {
 
     private FirstPositiveIntegerNotInCollection solution;
 
-    @Before
-    public void setUp() {
+    @BeforeEach
+    void setUp() {
         solution = new FirstPositiveIntegerNotInCollection();
     }
 
     @Test
-    public void test1() {
+    void test1() {
         assertEquals(5, solution.solution(new int[] { 1, 3, 6, 4, 1, 2 }));
     }
 }

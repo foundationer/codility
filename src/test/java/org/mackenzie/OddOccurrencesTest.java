@@ -1,21 +1,21 @@
 package org.mackenzie;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class OddOccurrencesTest {
 
 	private OddOccurrences oddity;
 
-	@Before
-	public void setUp() {
+	@BeforeEach
+	void setUp() {
 		oddity = new OddOccurrences();
 	}
 
 	@Test
-	public void xxxTest() {
+	void xxxTest() {
 		assertEquals(7, oddity.solution(new int[] { 9, 3, 9, 3, 9, 7, 9 }));
 	}
 }
